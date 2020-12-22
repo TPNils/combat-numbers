@@ -14,7 +14,7 @@ export default () => {
   game.settings.register('combat-numbers', 'show-modifiers', {
     name: game.i18n.localize('COMBATNUMBERS.SETTINGS.showModifiersName'),
     hint: game.i18n.localize('COMBATNUMBERS.SETTINGS.showModifiersHint'),
-    scope: 'client',
+    scope: 'world',
     config: true,
     default: false,
     type: Boolean,
@@ -22,7 +22,7 @@ export default () => {
   game.settings.register('combat-numbers', 'mask_damage', {
     name: game.i18n.localize('COMBATNUMBERS.SETTINGS.maskDamage'),
     hint: game.i18n.localize('COMBATNUMBERS.SETTINGS.maskDamageHint'),
-    scope: 'client',
+    scope: 'world',
     config: true,
     default: 'Hit',
     type: String,
@@ -30,7 +30,7 @@ export default () => {
   game.settings.register('combat-numbers', 'mask_heal', {
     name: game.i18n.localize('COMBATNUMBERS.SETTINGS.maskHeal'),
     hint: game.i18n.localize('COMBATNUMBERS.SETTINGS.maskHealHint'),
-    scope: 'client',
+    scope: 'world',
     config: true,
     default: 'Healed',
     type: String,
